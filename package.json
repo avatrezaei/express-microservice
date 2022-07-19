@@ -1,0 +1,20 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "node app microservices",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd services/book && npm start\" \"cd services/customer && npm start\" \"cd services/order && npm start\"",
+    "dev": "concurrently \"cd services/book && npm run dev\" \"cd services/customer && npm run dev\" \"cd services/order && npm run dev\"",
+    "install": "concurrently \"cd services/book && npm i\" \"cd services/customer && npm i\" \"cd services/order && npm i\"",
+    "postinstall": "mongo index.js"
+  },
+  "keywords": [],
+  "author": "avat rezaei <avatrezaei88@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "mongo": "^0.1.0"
+  }
+}

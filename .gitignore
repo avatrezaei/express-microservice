@@ -1,0 +1,4 @@
+services/book/node_modules/
+services/customer/node_modules/
+services/order/node_modules/
+node_modules

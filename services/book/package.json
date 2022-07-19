@@ -1,0 +1,26 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "the book service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "book",
+    "service"
+  ],
+  "author": "avatrezaei <avatrezaei88@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "mongoose": "^6.4.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
